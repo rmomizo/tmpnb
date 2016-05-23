@@ -284,7 +284,7 @@ If host_network=True, the starting port assigned to notebook servers on the host
     tornado.options.define('redirect_uri', default="/tree",
         help="URI to redirect users to upon initial notebook launch"
     )
-    tornado.options.define('pool_size', default=10,
+    tornado.options.define('pool_size', default=30,
         help="Capacity for containers on this system. Will be prelaunched at startup."
     )
     tornado.options.define('pool_name', default=None,
@@ -326,7 +326,7 @@ default docker bridge. Affects the semantics of container_port and container_ip.
         directories can be specified by using a comma-delimited string, directory
         path must provided in full (eg: /home/steve/data/:r), permissions default to
         rw""")
-    tornado.options.define('user_length', default=12,
+    tornado.options.define('user_length', default=30,
         help="Length of the unique /user/:id path generated per container"
     )
     tornado.options.define('extra_hosts', default=[], multiple=True,
