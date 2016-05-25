@@ -2,6 +2,7 @@ FROM python:3.4-wheezy
 
 RUN apt-get update && apt-get install python-dev libcurl4-openssl-dev -y
 RUN pip install --upgrade pip
+RUN pip install nltk
 
 RUN mkdir -p /srv/tmpnb
 WORKDIR /srv/tmpnb/
