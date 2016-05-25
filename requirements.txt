@@ -3,7 +3,7 @@ docker-py==1.7.2
 pycurl==7.43.0
 futures==3.0.5
 pytz==2015.7
-matplotliob==1.3.1
+
 networkx==1.9
 nltk==2.0.4
 pandas==0.14.1
